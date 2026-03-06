@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rishita Driver Center</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+width:100%;
+background:#0d6efd;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+background:#ff6b00;
+padding:14px 30px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+}
+
+/* SECTIONS */
+
+.section{
+padding:100px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* DRIVERS */
+
+.drivers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.driver{
+text-align:center;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.driver img{
+width:100%;
+border-radius:10px;
+}
+
+/* BOOKING */
+
+.form-box{
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.form-box button{
+width:100%;
+padding:12px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:60px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#222;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+/* FLOAT BUTTONS */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+font-size:20px;
+}
+
+.call{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#28a745;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>Rishita Driver Center</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#drivers">Drivers</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Professional Driver Service</h1>
+
+<p>Safe • Reliable • Affordable</p>
+
+<a class="btn" href="#booking">Book Driver</a>
+
+</div>
+
+</section>
+
+<section id="services" class="section">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Local Driver</h3>
+<p>City driver service.</p>
+</div>
+
+<div class="card">
+<h3>Outstation Driver</h3>
+<p>Long distance trips.</p>
+</div>
+
+<div class="card">
+<h3>Tour Driver</h3>
+<p>Travel tourism driver.</p>
+</div>
+
+<div class="card">
+<h3>Daily Driver</h3>
+<p>Hire driver daily.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="drivers" class="section">
+
+<h2>Our Drivers</h2>
+
+<div class="drivers">
+
+<div class="driver">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h4>Rahul</h4>
+<p>5 Years Experience</p>
+</div>
+
+<div class="driver">
+<img src="https://randomuser.me/api/portraits/men/45.jpg">
+<h4>Amit</h4>
+<p>7 Years Experience</p>
+</div>
+
+<div class="driver">
+<img src="https://randomuser.me/api/portraits/men/22.jpg">
+<h4>Ravi</h4>
+<p>4 Years Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d">
+<img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
+
+</div>
+
+</section>
+
+<section id="booking" class="section">
+
+<h2>Driver Booking</h2>
+
+<div class="form-box">
+
+<input id="name" type="text" placeholder="Your Name">
+
+<input id="phone" type="tel" placeholder="Phone Number">
+
+<select id="service">
+
+<option>Select Service</option>
+<option>Local Driver</option>
+<option>Outstation Driver</option>
+<option>Tour Driver</option>
+
+</select>
+
+<textarea id="location" placeholder="Pickup Location"></textarea>
+
+<button onclick="sendBooking()">Book Now</button>
+
+</div>
+
+</section>
+
+<section class="testimonial">
+
+<h2>Customer Reviews</h2>
+
+<p>"Very professional drivers and great service!"</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Rishita Driver Center</p>
+
+<p>Phone: 086373 05738</p>
+
+<a class="btn" href="https://maps.app.goo.gl/pMu8vD7kHpGGdKNw6">View Location</a>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/918637305738">W</a>
+
+<a class="call" href="tel:08637305738">C</a>
+
+<script>
+
+function sendBooking(){
+
+let name=document.getElementById("name").value
+let phone=document.getElementById("phone").value
+let service=document.getElementById("service").value
+let location=document.getElementById("location").value
+
+let msg=`Booking Request%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0APickup: ${location}`
+
+window.open(`https://wa.me/918637305738?text=${msg}`)
+
+}
+
+</script>
+
+</body>
+</html>
